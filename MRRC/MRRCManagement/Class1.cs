@@ -26,9 +26,10 @@ namespace MRRCManagement
         {
             Console.WriteLine("Type file path");
             path = Console.ReadLine();
-
+            
             Console.Clear();
             userInterface();
+           
 
         }
 
@@ -37,7 +38,7 @@ namespace MRRCManagement
             
             //User Interface Initial Choices
             Console.WriteLine("### Mates-Rates Rent-a-Car Operation Menu ###");
-            Console.WriteLine("\nYou May press the ESC key at any time to exit. Press the BACKSPACE key to return to the previous menu.");
+            Console.WriteLine("\nYou May type escape at any time to exit. type back to return to the previous menu.");
             Console.WriteLine("\nPlease enter a letter from the options below:");
 
             Console.WriteLine("a) Customer Management");
@@ -78,6 +79,7 @@ namespace MRRCManagement
         {
             Console.Clear();
             userInterface();
+
         }
 
         /// <summary>
