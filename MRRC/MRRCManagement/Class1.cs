@@ -8,19 +8,33 @@ namespace MRRCManagement
     /// </summary>
     public class Management
     {
+        //              C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\Data\
 
-        public const string customerPath = @"C:\Users\laser\Documents\CAB201\Assignment\MRRC\Data\customers.csv";
-        public const string fleetPath = @"C:\Users\laser\Documents\CAB201\Assignment\MRRC\Data\fleet.csv";
-        public const string rentalPath = @"C:\Users\laser\Documents\CAB201\Assignment\MRRC\Data\rentals.csv";
+        public static string path;
+        public static string customerPath;
+        public static string fleetPath;
+        public static string rentalPath;
+
 
         public static void inputLine()
         {
             Console.WriteLine("\n");
             Console.Write(">");
         }
+
+        public static void userPath()
+        {
+            Console.WriteLine("Type file path");
+            path = Console.ReadLine();
+
+            Console.Clear();
+            userInterface();
+
+        }
+
         public static void userInterface()
         {
-
+            
             //User Interface Initial Choices
             Console.WriteLine("### Mates-Rates Rent-a-Car Operation Menu ###");
             Console.WriteLine("\nYou May press the ESC key at any time to exit. Press the BACKSPACE key to return to the previous menu.");
@@ -175,7 +189,7 @@ namespace MRRCManagement
             }
             else if (key == "b" | key == "B")
             {
-                return;
+                searchCar();
             }
             //escape from program, type escape
             else if (key == "escape" | key == "Escape")
@@ -188,8 +202,6 @@ namespace MRRCManagement
                 userInterface();
             }
 
-
-
         }
 
         /// <summary>
@@ -197,8 +209,7 @@ namespace MRRCManagement
         /// </summary>
         public static void displayCustomers()
         {
-            //string home = @"C:\Users\laser\Documents\CAB201\Assignment\MRRC\Data\customers.csv";
-
+            customerPath = (path + "customers.csv");
 
             using (var reader = new StreamReader(customerPath))
             {
@@ -208,26 +219,24 @@ namespace MRRCManagement
 
                     string[] words = currentLine.Split(',');
 
-                    string[] id = words[0].Split();
-                    string[] title = words[1].Split();
-                    string[] fname = words[2].Split();
-                    string[] lname = words[3].Split();
-                    string[] gender = words[4].Split();
-                    string[] dob = words[5].Split();
+                    string id = words[0];
+                    string title = words[1];
+                    string fname = words[2];
+                    string lname = words[3];
+                    string gender = words[4];
+                    string dob = words[5];
 
-                    foreach (var i in id)
-                        foreach (var ti in title)
-                            foreach (var fn in fname)
-                                foreach (var ln in lname)
-                                    foreach (var gen in gender)
-                                        foreach (var d in dob)
-                                        {
-                                            Console.WriteLine("{0,0} {1,10} {2,10} {3,10} {4,10} {5,10}", i, ti, fn, ln, gen, d);
-                                        }
+
+                    Console.WriteLine(String.Join(" ", words));
 
                 }
-                Console.ReadLine();
-                interfaceReturn();
+                string key = Console.ReadLine();
+                if (key == "back" | key == "Back")
+                {
+                    Console.Clear();
+                    customerManagement();
+
+                }
             }
         }
 
@@ -237,7 +246,7 @@ namespace MRRCManagement
         public static void displayFleet()
         {
             //the location of the fleet data file
-            //string home = @"C:\Users\laser\Documents\CAB201\Assignment\MRRC\Data\fleet.csv";
+            fleetPath = (path + "fleet.csv");
 
             using (var reader = new StreamReader(fleetPath))
             {
@@ -247,37 +256,10 @@ namespace MRRCManagement
                     //needs to be able to split at newline as well FIX THIS
                     string[] words = currentLine.Split(',');
 
-                    string[] registration = words[0].Split();
-                    string[] grade = words[1].Split();
-                    string[] make = words[2].Split();
-                    string[] model = words[3].Split();
-                    string[] year = words[4].Split();
-                    string[] seats = words[5].Split();
-                    string[] transmission = words[6].Split();
-                    string[] fuel = words[7].Split();
-                    string[] gps = words[8].Split();
-                    string[] sunRoof = words[9].Split();
-                    string[] dailyRate = words[10].Split();
-                    string[] colour = words[11].Split();
 
 
-                    foreach (var register in registration)
-                        foreach (var gra in grade)
-                            foreach (var mak in make)
-                                foreach (var mode in model)
-                                    foreach (var yea in year)
-                                        foreach (var seat in seats)
-                                            foreach (var transm in transmission)
-                                                foreach (var fue in fuel)
-                                                    foreach (var gp in gps)
-                                                        foreach (var sun in sunRoof)
-                                                            foreach (var daily in dailyRate)
-                                                                foreach (var col in colour)
-                                                                {
-                                                                    //System.Console.WriteLine($"{register} |\t {gra} |\t {mak} |\t {mode} |\t {yea} |\t {seat} |\t {transm} |\t {fue} |\t {gp}|\t {sun} |\t {daily} |\t {col} ");
-                                                                    Console.WriteLine("{0,-20} {1,5} {2,20} {3,22} {4,24} {5,26} {6,28} {7,30} {8,32} {9,34} {10,36} {11,38}", register, gra, mak, mode, yea, seat, transm, fue, gp, sun, daily, col);
-                                                                }
 
+                    Console.WriteLine(String.Join(" ", words));
 
                 }
                 inputLine();
@@ -295,9 +277,7 @@ namespace MRRCManagement
         public static void displayRentals()
         {
             //the location of the rentals data file
-            //string home = @"C:\Users\laser\Documents\CAB201\Assignment\MRRC\Data\rentals.csv";
-
-            //reads the file line by line and splits the string up by , and places it into an array where it is then displayed from
+            rentalPath = (path + "rentals.csv");
 
             Console.WriteLine("\n");
             using (var reader = new StreamReader(rentalPath))
@@ -308,15 +288,7 @@ namespace MRRCManagement
 
                     string[] words = currentLine.Split(',');
 
-                    string[] registration = words[0].Split();
-                    string[] customerID = words[1].Split();
-
-                    foreach (var cot in registration)
-                        foreach (var dong in customerID)
-                        {
-                            System.Console.WriteLine($"{cot} | {dong} ");
-                        }
-
+                    Console.WriteLine(String.Join(" | ", words));
                 }
 
                 inputLine();
@@ -358,7 +330,7 @@ namespace MRRCManagement
             dob = Console.ReadLine();
 
             //the location of the fleet customers file
-            //string docPath = @"C:\Users\laser\Documents\CAB201\Assignment\MRRC\Data\customers.csv";
+            customerPath = (path + "customers.csv");
 
             using (StreamWriter outputFile = File.AppendText(customerPath))
             {
@@ -422,7 +394,8 @@ namespace MRRCManagement
             Console.Write("*Car colour: ");
             colour = Console.ReadLine();
 
-            //string docPath = @"C:\Users\laser\Documents\CAB201\Assignment\MRRC\Data\fleet.csv";
+            //fleet path
+            fleetPath = (path + "fleet.csv");
 
             using (StreamWriter outputFile = File.AppendText(fleetPath))
             {
@@ -447,6 +420,58 @@ namespace MRRCManagement
 
         }
 
+        public static void searchCar()
+        {
+            fleetPath = (path + "fleet.csv");
+
+            /*
+            try
+            {
+                Console.WriteLine(docPath);
+            }
+            catch
+            {
+                Console.WriteLine("no");
+            }
+            */
+            Console.Write("Enter your query: ");
+            string query = Console.ReadLine();
+            /*
+            if (query.Contains("OR"))
+            {
+                string[] see = query.Split(new string[] { "OR" }, StringSplitOptions.None);
+                foreach (string ee in see){
+                    Console.WriteLine(ee);
+                }
+            }
+            */
+            try
+            {
+                using (var reader = new StreamReader(fleetPath))
+                {
+
+                    string currentLine;
+                    while ((currentLine = reader.ReadLine()) != null)
+                    {
+                        if (currentLine.Contains(query))
+                        {
+                            Console.WriteLine(currentLine);
+                            //Console.WriteLine(reader.ReadLine());
+                        }
+
+                    }
+                    Console.WriteLine("done");
+
+                }
+                Console.ReadLine();
+                Console.WriteLine("done");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            Console.ReadLine();
+        }
 
         static void Main(string[] args)
         {

@@ -31,3 +31,13 @@ C:\Users\laser\Documents\CAB201\Assignment\CAB201 Assign\MRRC\MRRC\obj\Debug\MRR
 C:\Users\laser\Documents\CAB201\Assignment\CAB201 Assign\MRRC\MRRC\obj\Debug\MRRC.csproj.CopyComplete
 C:\Users\laser\Documents\CAB201\Assignment\CAB201 Assign\MRRC\MRRC\obj\Debug\MRRC.exe
 C:\Users\laser\Documents\CAB201\Assignment\CAB201 Assign\MRRC\MRRC\obj\Debug\MRRC.pdb
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\obj\Debug\MRRC.csprojAssemblyReference.cache
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\obj\Debug\MRRC.csproj.CoreCompileInputs.cache
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\obj\Debug\MRRC.exe
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\obj\Debug\MRRC.pdb
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\bin\Debug\MRRC.exe.config
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\bin\Debug\MRRC.exe
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\bin\Debug\MRRC.pdb
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\bin\Debug\MRRCManagement.dll
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\bin\Debug\MRRCManagement.pdb
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRC\obj\Debug\MRRC.csproj.CopyComplete

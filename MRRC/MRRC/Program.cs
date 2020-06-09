@@ -7,7 +7,10 @@ namespace MRRC
     {
         static void Main(string[] args)
         {
-            Management.userInterface();
+
+
+            //Management.userInterface(args[0]);
+            Management.userPath();
         }
     }
 }

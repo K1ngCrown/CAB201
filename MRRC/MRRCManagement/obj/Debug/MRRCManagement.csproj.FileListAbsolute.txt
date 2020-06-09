@@ -15,3 +15,9 @@ C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\obj\Debug\MR
 C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csproj.CoreCompileInputs.cache
 C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\obj\Debug\MRRCManagement.dll
 C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\obj\Debug\MRRCManagement.pdb
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csprojAssemblyReference.cache
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csproj.CoreCompileInputs.cache
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRCManagement\obj\Debug\MRRCManagement.dll
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRCManagement\obj\Debug\MRRCManagement.pdb
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRCManagement\bin\Debug\MRRCManagement.dll
+C:\Users\laser\Documents\CAB201\Assignment\CAB201_Assign_Current\MRRC\MRRCManagement\bin\Debug\MRRCManagement.pdb
