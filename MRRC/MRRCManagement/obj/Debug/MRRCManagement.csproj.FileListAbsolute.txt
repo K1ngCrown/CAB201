@@ -1,0 +1,17 @@
+C:\Users\laser\Documents\CAB201\Assignment\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csprojAssemblyReference.cache
+C:\Users\laser\Documents\CAB201\Assignment\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csproj.CoreCompileInputs.cache
+C:\Users\laser\Documents\CAB201\Assignment\MRRC\MRRCManagement\bin\Debug\MRRCManagement.dll
+C:\Users\laser\Documents\CAB201\Assignment\MRRC\MRRCManagement\bin\Debug\MRRCManagement.pdb
+C:\Users\laser\Documents\CAB201\Assignment\MRRC\MRRCManagement\obj\Debug\MRRCManagement.dll
+C:\Users\laser\Documents\CAB201\Assignment\MRRC\MRRCManagement\obj\Debug\MRRCManagement.pdb
+E:\CAB201\Assignment\MRRC\MRRCManagement\bin\Debug\MRRCManagement.dll
+E:\CAB201\Assignment\MRRC\MRRCManagement\bin\Debug\MRRCManagement.pdb
+E:\CAB201\Assignment\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csprojAssemblyReference.cache
+E:\CAB201\Assignment\MRRC\MRRCManagement\obj\Debug\MRRCManagement.dll
+E:\CAB201\Assignment\MRRC\MRRCManagement\obj\Debug\MRRCManagement.pdb
+C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\bin\Debug\MRRCManagement.dll
+C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\bin\Debug\MRRCManagement.pdb
+C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csprojAssemblyReference.cache
+C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\obj\Debug\MRRCManagement.csproj.CoreCompileInputs.cache
+C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\obj\Debug\MRRCManagement.dll
+C:\Users\laser\OneDrive\Documents\CAB201 Assign\MRRC\MRRCManagement\obj\Debug\MRRCManagement.pdb
